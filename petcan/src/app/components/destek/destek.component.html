@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 style= "text-align: center;" class="mt-5 mb-5">YARDIM & DESTEK</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+<div class="row">
+  <div class="col-lg-12">
+    <img style="width: 100%; height: 300px;" src="assets/sstursor.png" alt="">
+   </div>
+
+  <div class="col-lg-6 mt-5"  *ngFor="let kayit of kayitlar">
+<div class="urun-main" style="width: 100%; height: 200px;">
+  <div class="row">
+    <div class="col-lg-6"><div class="urun-resim" style="width: 100%; height: 200px;">
+    <img style="width: 100%; height: 200px;" src="assets/Can.png" alt=""></div></div>
+    <div class="col-lg-6">
+      <div class="soru-baslik">
+        <p><strong>SORU :</strong> {{kayit.soru}}</p>
+        <p><strong>CEVAP :</strong> {{kayit.cevap}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  </div>
+</div>
+
+
+
+<app-footer></app-footer>
